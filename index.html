@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Movie Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="This is a movie database for practising how to store information in JS objects">
+  </head>
+
+
+  <body onload="createMovieList()">
+    <!-- Header Section -->
+    <header>
+      <div class="navbar navbar-inverse navbar-fixed-top navbar-collapse" id="head-navbar">
+        <ul class=" nav navbar-nav">
+          <h1>The Movie Database</h1>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+        </ul>
+      </header>
+      <!-- End of Header Section -->
+      
+		<!-- Main Homepage Section -->
+     <!-- search results go here -->
+     <section class="new-data">
+         <div id="movie-list" class="wrapper">
+        <!-- <div class="new-container">
+           <h2 class="movie-title"></h2>
+           <p class="movie-year"></p>
+           <p class="movie-runtime"></p>
+           <div class="movie-rating"></div>
+           <p class="movie-cast"></p>
+           <p class="movie-plot"></p> 
+         </div> -->
+         </div>
+       </section>
+
+       <!-- Movie Form Section -->
+       <h1 id="searchResult">Add your favourite Movies</h1>
+        <section>
+          <div id="addMovieModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form id="addMovieForm">
+                <h2 id="modalTitle">Add Movie</h2>
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="title"><br>
+                <label for="year">Year:</label>
+                <input type="number" id="year" placeholder="year"><br>
+                <label for="runtime">Runtime:</label>
+                <input type="number" id="runtime" placeholder="runtime"><br>
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" step="0.1" min="0" max="10"><br>
+                <label for="plot">Plot:</label>
+                <textarea id="plot" placeholder="plot"></textarea><br>
+                <label for="cast">Cast:</label>
+                <textarea id="cast" placeholder="cast"></textarea><br>
+                <input type="submit" id="submit-edit" value="Add Movie"><i class="fa-solid fa-plus"></i>
+              </form>
+            </div>
+          </div>
+          </section>
+                
+<!-- End of Main Section -->
+
+  <footer>
+    <div class="footer-section">
+      <h3>THE MD</h3>
+      <ul>
+        <li>Contact Us</li>
+        <li>Support Forums</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>GET INVOLVED</h3>
+      <ul>
+        <li>Contrivution Bible</li>
+        <li>Add Movie</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>COMMUNITY</h3>
+      <ul>
+        <li>Guidelines</li>
+        <li>Discussions</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>LEGAL</h3>
+      <ul>
+        <li>Terms of Use</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="MovieData.js"></script>
+  </body>
+</html>
